@@ -1,0 +1,147 @@
+.form{
+			 
+             top: 0;
+             left: 0;
+             box-sizing: border-box;
+             padding: 40px;
+             width: 300px;
+             height: 400px;
+		}
+.container{
+    background-color: skyblue;
+}
+input[type="text"],input[type="email"],input[type="date"],
+input[type="password"]{
+    display: flex;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 600px;
+    height: 50px;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid skyblue;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 02s ease;
+    background-color: transparent;
+}
+option{
+     display: flex;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 500px;
+    height: 32px;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid skyblue;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 02s ease;
+}
+input[type="number"]{
+	display: flex;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 500px;
+    height: 32px;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid skyblue;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 02s ease;
+    background-color: transparent;
+}
+button{
+    margin-bottom: 28px;
+    width: 500px;
+    height: 32px;
+    background: black;
+    border:none;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0,2s ease;
+    cursor: pointer;
+}
+button:hover,
+button:focus{
+    background: white;
+    color: black;
+    transition: 0,2s ease;
+}
+textarea{
+    display: flex;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 500px;
+    height: 32px;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid skyblue;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 02s ease;
+}
+#form1{
+    position: relative;
+    margin:5% auto; 
+    height: 1030px;
+    width:600px;
+    background: skyblue;
+
+    box-shadow: 0 2px 900px rgba(0,0,0,0.6);
+}
+	display: flex;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 500px;
+    height: 32px;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid skyblue;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 02s ease;
+
+p{
+	margin: 0 0 20px 0;
+    font-weight: 30;
+    font-size: 20px;
+    color: black;
+}
+select option{
+    display: flex;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 500px;
+    height: 32px;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid skyblue;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 02s ease;
+}
+button[type="button"]{
+    color: white;
+    background-color: black;
+}
+button[type="reset"]{
+    color: white;
+    background-color: black;
+}

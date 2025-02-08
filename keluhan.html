@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Home | kelompok 10</title>
+    <meta name="description" content="Page-specific description">
+    <meta name="keywords" content="Page-specific keywords">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="static/images/favicons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="apple-touch-icon" href="static/images/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" href="static/images/favicons/apple-touch-icon-precomposed.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800%7COpen+Sans+Condensed:300&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="static/css/screen.min.css">
+    <link rel="stylesheet" href="static/css/custom.min.css">
+    <link rel="stylesheet" href="static/css/css.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="static/js/head.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+    </script>
+    
+    <script>
+      function inputdata(){
+       var n=document.forms['datapribadi']['nama'].value;
+       var e=document.forms['datapribadi']['email'].value;
+       var p=document.forms['datapribadi']['pekerjaan'].value;
+       var a=document.forms['datapribadi']['alamat'].value;
+       var s=document.forms['datapribadi']['tanggal'].value;  
+       var i=document.forms['datapribadi']['hp'].value;  
+       var c=document.forms['datapribadi']['gedung'].value; 
+       var d=document.forms['datapribadi']['keluhan'].value;
+
+                                               
+       var tabel = document.getElementById("databel");
+       var baris = tabel.insertRow(1);
+       var kol1 = baris.insertCell(0);
+       var kol2 = baris.insertCell(1);
+       var kol3 = baris.insertCell(2);
+       var kol4 = baris.insertCell(3);
+       var kol5 = baris.insertCell(4);
+       var kol6 = baris.insertCell(5);
+       var kol7 = baris.insertCell(6);
+       var kol8 = baris.insertCell(7);
+
+
+
+       kol1.innerHTML = n;
+       kol2.innerHTML = e;
+       kol3.innerHTML = p;
+       kol4.innerHTML = a;
+       kol5.innerHTML = s;
+       kol6.innerHTML = i;
+       kol7.innerHTML = c;
+       kol8.innerHTML = d;
+      }
+     
+    </script>
+  </head>
+  <body>
+    <header class="main-header">
+        <div class="first-nav">
+            <div class="container">
+                <nav class="first-nav__links">
+                    <ul>
+                        <li>
+                            <a href="index.html">HOME</a>
+                       </li>
+                       <li>
+                            <a href="">FORM</a>
+                        </li>
+                        <li>
+                            <a href="menu.html">KEGIATAN</a>
+                        </li>
+                        <li>
+                            <a href="kontak.html">KONTAK</a>
+                        </li>
+                        <ul>
+                         <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Log out</a>
+                         </li>
+                        </ul>
+                        
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+    <section class="home-section" id="home">
+      <div class="home-section__bg">
+      </div>
+      <div class="home-section__overlay">
+        <div class="container">
+        
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section-->
+<section class="common-section" id="projects">
+  <header class="common-section__header">
+    <h2>
+    </h2>
+    <p>
+    </p>
+  </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8"><h1>Keluhan</h1>
+        <form name="datapribadi" method="" action="">
+        <div class="form-group">
+        <label for="exampleFormControlInput1">Nama</label>
+        <input type="text" class="form-control" name="nama" id="exampleFormControlInput1" placeholder="masukkan nama anda">
+        <label for="exampleFormControlInput1">Tanggal</label>
+        <input type="date" class="form-control" name="tanggal" id="exampleFormControlInput1">
+        <label for="exampleFormControlInput1">Email</label>
+        <input type="email" class="form-control" name="email" id="exampleFormControlInput2" placeholder="masukkan alamat email anda">
+        <label for="exampleFormControlInput1">Nomor Handphone :</label>
+        <input type="number" class="form-control" name="hp" id="exampleFormControlInput1" placeholder="masukkan nomor Handphone anda">
+        <label for="exampleFormControlInput1">Nama gedung:</label>
+        <input type="text" class="form-control" name="gedung" id="exampleFormControlInput1" placeholder="masukkan nama gedung anda">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">pekerjaan</label>
+        <select class="form-control" name="pekerjaan" id="exampleFormControlSelect1">
+          <option></option>
+          <option>Mahasiswa</option>
+          <option>Staf akademik</option>
+          <option>Dosen</option>
+         
+        </select>
+        <label for="exampleFormControlSelect1">Keluhan pada alat:</label>
+        <select class="form-control" name="keluhan" id="exampleFormControlSelect1">
+          <option></option>
+          <option>Laptop</option>
+          <option>Proyektor</option>
+          <option>Cpu</option>
+         
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">konfirmasi keluhan</label>
+        <textarea class="form-control mb-3" name="alamat" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <button type="button" onClick='inputdata()' class="btn btn-success">Simpan</button>
+        <button type="reset" class="btn btn-warning">Reset</button>
+      </div>
+      <div class="row">
+        <table class="table" id="databel">
+          <thead>
+            <tr>
+              <th scope="col">Nama</th>
+              <th scope="col">Email</th>
+              <th scope="col">Pekerjaan</th>
+              <th scope="col">keluhan</th>
+              <th scope="col">Tanggal</th>
+              <th scope="col">No.hp</th>
+              <th scope="col">Nama gedung</th>
+              <th scope="col">Keluhan alat</th>
+            </tr>
+          </thead>
+        </table>  
+      </div>
+    </form>
+        </div>          
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+</section>
+   
+   
+    <header class="contact-card__header">
+      <h2>informasi tentang kami
+      </h2>
+      <h4>beberapa informasi dari kami, jika di perlukan.
+      </h4>
+    </header>
+    <div class="contact-info">
+      <div class="contact-info__logo">
+      </div>
+      <div class="contact-info__group">
+      </div>
+      <div class="contact-info__vcard vcard">
+        <h4 class="fn org">tentang kami
+        </h4>
+        <p class="role title">semoga bermanfaat
+        </p>
+        <p class="icon icon_location">
+          <a class="adr js-anchor" href="#gmap">
+            <span class="country-name">Indonesia
+            </span>,&nbsp;
+            <span class="locality">Tobasamosir
+            </span>,&nbsp;
+            <span class="address">Jl.P.I.Del,Sitoluama,Lagu Boti.
+            </span>
+          </a>
+        </p>
+        <p class="icon icon_mail">
+          <a class="email" href="mailto:contact@example.com">contact@Institut_Teknologi_Del.ac.com
+          </a>
+        </p>
+        <p class="icon icon_phone">
+          <a class="email" href="tel:1111111111">0821-6654-3117
+          </a>
+        </p>
+      </div>
+      <ul class="contact-info__social">
+        <li>
+          <a class="icon icon_fb" rel="nofollow">I'm on Facebook
+          </a>
+        </li>
+        <li>
+          <a class="icon icon_twi" rel="nofollow">My Twitter
+          </a>
+        </li>
+        <li>
+          <a class="icon icon_gplus" rel="nofollow">I'm on Google+
+          </a>
+        </li>
+        <li>
+          <a class="icon icon_vk" rel="nofollow">I'm in Vk
+          </a>
+        </li>
+        <li>
+          <a class="icon icon_in" rel="nofollow">My Linkedin profile
+          </a>
+        </li>
+        <li>
+          <a class="icon icon_rss" rel="nofollow">RSS feed... maybe
+          </a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </section>
+</div>
+<div> <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Google Map </title>
+  
+  <script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+function initialize() {
+  var propertiPeta = {
+    center:new google.maps.LatLng(2.385674,99.148033),
+    zoom:9,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var infowindow = new google.maps.InfoWindow({
+  content:"Hello World!"
+   });
+  var peta = new google.maps.Map(document.getElementById("googleMap"), propertiPeta);
+  
+  // membuat Marker
+  var marker=new google.maps.Marker({
+      position: new google.maps.LatLng(2.385674,99.148033),
+      map: peta,
+    url: 'BSTEx05.html',label: {
+    color: 'white',
+    fontWeight: 'bold',
+    text: 'Institut Teknologi Del',
+  },
+  });
+     google.maps.event.addListener(
+            marker, 
+            "click", 
+            function (e) {
+                window.location.href = this.url;
+         infowindow.open(map,marker);
+            }
+        );
+}
+
+// event jendela di-load  
+google.maps.event.addDomListener(window, 'load', initialize);
+</script> </div>
+<div id="googleMap" style="width:100%;height:380px;"></div>
+</div>
+</div>
+<!-- Footer-->
+<footer class="main-footer">
+  <div class="container">
+    <p class="main-footer__copyright">&copy;&nbsp;
+      <span>cara cepat ke atas
+      </span>
+    </p>
+    <a class="main-footer__gotop icon icon_gotop js-anchor" href="#home">To top!
+    </a>
+    <p class="main-footer__links">Designed by&nbsp;
+      <a href="http://orlovmax.com">Kelompok 10
+      </a>
+    </p>
+  </div>
+</footer>
+<script src="static/js/body.min.js">
+</script>
+</body>
+</html>
